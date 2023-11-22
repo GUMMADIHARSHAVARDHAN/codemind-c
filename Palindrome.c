@@ -11,10 +11,10 @@ int main()
     }
  if(a == rev)   
  {
-     printf("True");
+     printf("Palindrome");
  }
  else 
  {
-     printf("False");
+     printf("Not Palindrome");
  }
 }
