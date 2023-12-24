@@ -1,24 +1,14 @@
-#include <stdio.h>
-int findLargestDigit(int num) {
-    int largestDigit = 0;
-
-    while (num > 0) {
-        int digit = num % 10;
-        if (digit > largestDigit) {
-            largestDigit = digit;
-        }
-        num /= 10;
+#include<stdio.h>
+int main()
+{ int i,n,r,rev=0;
+scanf("%d",&n);
+while(n>0)
+{  
+    r = n%10;
+    if(rev<r){
+        rev = r;
     }
-
-    return largestDigit;
+    n = n/10;
 }
-
-int main() {
-    int number;
-    scanf("%d", &number);
-    int largestDigit = findLargestDigit(number);
-
-    printf("%d",largestDigit);
-
-    return 0;
+printf("%d",rev);
 }
